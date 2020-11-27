@@ -1,0 +1,42 @@
+body{
+    background-color:#EEE9E8;
+    margin: 30px;
+}
+.text{
+    color: #900C3F ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.header{
+    color: darkgreen;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+#form{
+    margin-bottom: 50px;
+}
+
+.textInfo{
+    color:#B348B1  ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 20px;
+    border:2.5px solid palevioletred;
+    
+}
+
+.moviePoster:hover{
+    opacity: 0.5;
+    
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation" style="display: inline;">
+        <h1 class="header">Welcome Movie Page</h1>
+        <form action="/getMovie" id="form">
+            <label for="movieTitle" class="text">Search Movie</label>
+            <input type="text" placeholder="Enter Movie Name" id="movieTitle" name="movieTitle">
+            <button type="submit"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+              </svg></button>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-3 moviePoster"><img src="<%=movie.Poster%>" alt=""></div>
+        <div class="col-6">
+            <table>
+                <tr>
+                    <td class="text">Movie Name: </td>
+                    <td class="textInfo"><%=movie.Title%></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td class="text">Movie Genre: </td>
+                    <td class="textInfo"> <%=movie.Genre%></td>
+                </tr>
+                <tr>
+                    <td  class="text">Film Director: </td>
+                    <td class="textInfo"><%=movie.Director%></td>
+                </tr>
+                <tr>
+                    <td class="text">Released: </td>
+                    <td class="textInfo"><%=movie.Released%></td>
+                </tr>
+                <tr>
+                    <td class="text">Writer of Movie: </td>
+                    <td class="textInfo"><%=movie.Writer%></td>
+                </tr>
+                <tr>
+                    <td class="text">Actors: </td>
+                    <td class="textInfo"><%=movie.Actors%></td>
+                </tr>
+    
+            </table>
+        </div>
+    </div>
+</body>
+</html>
